@@ -1,5 +1,4 @@
 User-agent: *
-
 Allow: /
 
-Sitemap: https://ingrid-zuniga-web.estudiomarcelo20.workers.dev/sitemap.xml
+Sitemap: https://ingrid-zuniga-web.pages.dev/sitemap.xml
