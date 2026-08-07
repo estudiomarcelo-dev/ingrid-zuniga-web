@@ -1,477 +1,402 @@
-<!-- ============================================
-     HEAD: META TAGS SEO, SCHEMA.ORG, TITLE
-     ============================================ -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    <!-- === SEO: DESCRIPTION Y KEYWORDS === -->
-    <meta name="description" content="Ingrid Estefani Zúñiga Abanto - Abogada
-         especializada en Derecho Administrativo, Gestión Pública y Derecho
-         Civil. Más de 13 años de experiencia en instituciones públicas del Perú.">
-    <meta name="keywords" content="Ingrid Zúñiga, Ingrid Abanto,
-         Ingrid Estefani Zúñiga Abanto, abogada Perú,
-         derecho administrativo, gestión pública, derecho civil,
-         asesoría jurídica, Lima, contrataciones del Estado">
+    <meta name="description" content="Ingrid Estefani Zúñiga Abanto - Abogada especializada en Derecho Administrativo y Gestión Pública con más de 13 años de experiencia en instituciones públicas peruanas.">
+    <meta name="keywords" content="abogada, derecho administrativo, gestión pública, Perú, asesoría jurídica">
     <meta name="author" content="Ingrid Estefani Zúñiga Abanto">
     <meta name="robots" content="index, follow">
-    <meta name="language" content="Spanish">
- 
-    <!-- === OPEN GRAPH (Redes sociales) === -->
-    <meta property="og:title"
-          content="Ingrid Estefani Zúñiga Abanto - Abogada Especialista">
-    <meta property="og:description"
-          content="Abogada con 13+ años en Derecho Administrativo y
-                   Gestión Pública. Experiencia en PRONIED, ESSALUD,
-                   Ministerio de Vivienda y ANA.">
+    <link rel="canonical" href="https://ingrid-zuniga-web.pages.dev/">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Ingrid Estefani Zúñiga Abanto - Abogada">
+    <meta property="og:description" content="Abogada con 13+ años en Derecho Administrativo, Gestión Pública y Asesoría Jurídica">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://ingridzuniga.com/foto.jpg">
-    <meta property="og:url" content="https://ingridzuniga.com">
-    <meta property="og:locale" content="es_PE">
- 
-    <!-- === TWITTER CARD === -->
+    <meta property="og:url" content="https://ingrid-zuniga-web.pages.dev/">
+    <meta property="og:image" content="assets/img/ingrid.jpg">
+    
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title"
-          content="Ingrid Estefani Zúñiga Abanto - Abogada">
-    <meta name="twitter:description"
-          content="Especialista en Derecho Administrativo y Gestión Pública">
- 
-    <!-- === SCHEMA.ORG STRUCTURED DATA === -->
+    <meta name="twitter:title" content="Ingrid Estefani Zúñiga Abanto">
+    <meta name="twitter:description" content="Abogada especializada en Derecho Administrativo y Gestión Pública">
+    
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Ingrid Estefani Zúñiga Abanto",
         "jobTitle": "Abogada",
-        "description": "Abogada especializada en Derecho Administrativo,
-                         Gestión Pública y Derecho Civil",
-        "url": "https://ingridzuniga.com",
-        "sameAs": [
-            "https://www.linkedin.com/in/ingrid-zuniga-abanto"
-        ],
-        "knowsAbout": [
-            "Derecho Administrativo",
-            "Gestión Pública",
-            "Derecho Civil",
-            "Contrataciones del Estado",
-            "Recursos Hídricos",
-            "Asesoría Jurídica"
-        ],
-        "workLocation": {
-            "@type": "Place",
-            "name": "Lima, Perú"
-        },
-        "alumniOf": {
-            "@type": "EducationalOrganization",
-            "name": "Colegio de Abogados de Lima"
-        }
+        "url": "https://ingrid-zuniga-web.pages.dev/",
+        "image": "assets/img/ingrid.jpg",
+        "logo": "assets/img/logo.png",
+        "sameAs": [],
+        "knowsAbout": ["Derecho Administrativo", "Gestión Pública", "Derecho Civil", "Contrataciones del Estado", "Recursos Hídricos"]
     }
     </script>
- 
-    <title>Ingrid Estefani Zúñiga Abanto | Abogada Especialista
-           en Derecho Administrativo</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <title>Ingrid Estefani Zúñiga Abanto - Abogada | Derecho Administrativo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
 </head>
 <body>
- 
-<!-- ============================================
-     NAVBAR CON HAMBURGUESA
-     ============================================ -->
-<nav class="navbar" role="navigation" aria-label="Menú principal">
+    <!-- Botón Dark Mode -->
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Cambiar modo oscuro">
+        <span class="toggle-icon">🌙</span>
+    </button>
+    <nav class="navbar">
     <div class="nav-container">
- 
-        <!-- Logo -->
-        <a href="#inicio" class="logo">⚖ IZA</a>
- 
-        <!-- Botón Hamburguesa (visible solo en móvil) -->
-        <button class="hamburger" id="hamburger"
-                aria-label="Abrir menú" aria-expanded="false"
-                aria-controls="navMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
- 
-        <!-- Menú de Navegación -->
-        <ul class="nav-menu" id="navMenu" role="list">
-            <li><a href="#inicio">Inicio</a></li>
+
+        <div class="logo">
+            ⚖ IZA
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="#hero">Inicio</a></li>
             <li><a href="#sobre">Sobre mí</a></li>
             <li><a href="#especialidades">Especialidades</a></li>
             <li><a href="#trayectoria">Trayectoria</a></li>
             <li><a href="#publicaciones">Publicaciones</a></li>
             <li><a href="#reconocimientos">Reconocimientos</a></li>
-            <li><a href="#formacion">Formación</a></li>
-            <li><a href="#contacto">Contacto</a></li>
         </ul>
- 
-        <!-- Toggle Dark Mode -->
-        <button class="dark-mode-toggle" id="darkModeToggle"
-                aria-label="Cambiar tema">🌙</button>
+
     </div>
 </nav>
- 
-<!-- Overlay oscuro para cerrar menú al tocar fuera -->
-<div class="menu-overlay" id="menuOverlay"
-     role="presentation" aria-hidden="true"></div>
- 
-<!-- ============================================
-     HERO SECTION
-     ============================================ -->
-<section id="inicio" class="hero">
-    <canvas class="particle-canvas" id="particleCanvas"
-            aria-hidden="true"></canvas>
- 
-    <div class="hero-content">
-        <div class="hero-text">
-            <h1 class="hero-title">
-                <span class="name-line">Ingrid Estefani</span>
-                <span class="name-line">Zúñiga Abanto</span>
-            </h1>
-            <p class="hero-subtitle">Abogada</p>
-            <p class="hero-specialties">
-                Derecho Administrativo | Gestión Pública
-            </p>
-            <p class="hero-tagline">
-                Más de 13 años contribuyendo al fortalecimiento
-                institucional del Estado Peruano con experiencia en
-                asesoría jurídica, contrataciones del Estado y
-                recursos hídricos.
-            </p>
-            <div style="display:flex; gap:15px; flex-wrap:wrap;">
-                <button class="cta-button"
-                    onclick="document.getElementById('sobre')
-                    .scrollIntoView({behavior:'smooth'})">
-                    Conocer Trayectoria
-                </button>
-                <button class="cta-button cta-secondary">
-                    Descargar CV
-                </button>
+
+    <!-- HERO / PORTADA -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="name-line">INGRID ESTEFANI</span>
+                    <span class="name-line">ZÚÑIGA ABANTO</span>
+                </h1>
+                <p class="hero-subtitle">Abogada | Gestión Pública</p>
+                <p class="hero-specialties">Derecho Administrativo | Derecho Civil</p>
+                <p class="hero-tagline">"Más de 13 años contribuyendo al fortalecimiento institucional del Estado Peruano"</p>
+                <div class="hero-buttons">
+
+    <a href="#sobre" class="cta-button">
+        Conocer trayectoria
+    </a>
+
+    <a href="assets/pdf/CV_Ingrid_Zuniga_Abanto_Profesional.pdf"
+       class="cta-button secondary"
+       download>
+
+        📄 Descargar CV
+
+    </a>
+
+</div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/img/ingrid.jpg" alt="Ingrid Estefani Zúñiga Abanto" class="profile-photo">
             </div>
         </div>
- 
-        <div class="hero-image">
-            <!-- Reemplazar con: <img src="foto.jpg"
-                 alt="Ingrid Zúñiga Abanto - Abogada"
-                 class="profile-photo"> -->
-            <div class="photo-placeholder">
-                [Foto de Ingrid Zúñiga Abanto]
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number" data-target="13">0</span><span class="stat-plus">+</span>
+                <p class="stat-label">Años de experiencia</p>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-target="10">0</span>
+                <p class="stat-label">Instituciones</p>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-target="7">0</span>
+                <p class="stat-label">Especialidades</p>
             </div>
         </div>
-    </div>
- 
-    <div class="hero-stats">
-        <div class="stat">
-            <div class="stat-number">
-                <span class="counter" data-target="13">0</span>
-                <span class="stat-plus">+</span>
-            </div>
-            <div class="stat-label">Años de Experiencia</div>
-        </div>
-        <div class="stat">
-            <div class="stat-number">
-                <span class="counter" data-target="10">0</span>
-                <span class="stat-plus">+</span>
-            </div>
-            <div class="stat-label">Instituciones</div>
-        </div>
-        <div class="stat">
-            <div class="stat-number">
-                <span class="counter" data-target="7">0</span>
-            </div>
-            <div class="stat-label">Especialidades</div>
-        </div>
-    </div>
-</section>
- 
-<!-- ============================================
-     SOBRE INGRID
-     ============================================ -->
-<section id="sobre">
-    <div class="container">
-        <h2 class="section-title">Sobre Ingrid Zúñiga Abanto</h2>
-        <p class="about-text">
-            Abogada titulada con más de trece años de experiencia
-            profesional en instituciones públicas y privadas del Perú,
-            especializada en Derecho Administrativo, Derecho Civil y
-            Gestión Pública. Mi compromiso es fortalecer las instituciones
-            del Estado a través de asesoría jurídica de calidad.
-        </p>
-        <div class="about-highlights">
-            <div class="highlight-card">
-                <h3>Experiencia</h3>
-                <p>13+ años en sector público y privado: PRONIED,
-                   ESSALUD, Ministerio de Vivienda, ANA y más.</p>
-            </div>
-            <div class="highlight-card">
-                <h3>Especialización</h3>
-                <p>Derecho Administrativo, Gestión Pública,
-                   Derecho Civil, Contrataciones del Estado,
-                   Recursos Hídricos.</p>
-            </div>
-            <div class="highlight-card">
-                <h3>Compromiso</h3>
-                <p>Fortalecimiento institucional del Estado y
-                   promoción del desarrollo sostenible a través
-                   de asesoría jurídica de calidad.</p>
-            </div>
-        </div>
-    </div>
-</section>
- 
-<!-- === ESPECIALIDADES === -->
-<section id="especialidades">
-    <div class="container">
-        <h2 class="section-title">Especialidades</h2>
-        <div class="especialidades-grid">
-            <div class="especialidad-card">
-                <span class="especialidad-icon">⚖</span>
-                <h3>Derecho Administrativo</h3>
-                <p>Asesoría en procedimientos administrativos y regulaciones estatales</p>
-            </div>
-            <div class="especialidad-card">
-                <span class="especialidad-icon">🏛</span>
-                <h3>Gestión Pública</h3>
-                <p>Fortalecimiento institucional y políticas públicas</p>
-            </div>
-            <div class="especialidad-card">
-                <span class="especialidad-icon">📜</span>
-                <h3>Derecho Civil</h3>
-                <p>Asesoría en asuntos civiles y contractuales</p>
-            </div>
-            <div class="especialidad-card">
-                <span class="especialidad-icon">🤝</span>
-                <h3>Contrataciones del Estado</h3>
-                <p>Especialista en procesos de contratación pública</p>
-            </div>
-            <div class="especialidad-card">
-                <span class="especialidad-icon">💧</span>
-                <h3>Recursos Hídricos</h3>
-                <p>Derecho ambiental y gestión de recursos naturales</p>
-            </div>
-            <div class="especialidad-card">
-                <span class="especialidad-icon">📑</span>
-                <h3>Asesoría Jurídica</h3>
-                <p>Consultoría legal integral para instituciones</p>
-            </div>
-        </div>
-    </div>
-</section>
- 
-<!-- === TRAYECTORIA PROFESIONAL === -->
-<section id="trayectoria">
-    <div class="container">
-        <h2 class="section-title">Trayectoria Profesional</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content" tabindex="0"
-                     role="button" aria-expanded="false">
-                    <div class="timeline-year">2025</div>
-                    <h3>PRONIED</h3>
-                    <p>Asesoría jurídica en proyectos educativos nacionales</p>
-                    <div class="timeline-details">
-                        <p>Coordinación de asuntos legales en programas de infraestructura educativa.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content" tabindex="0"
-                     role="button" aria-expanded="false">
-                    <div class="timeline-year">2024</div>
-                    <h3>ESSALUD</h3>
-                    <p>Coordinación de asuntos jurídicos y contrataciones</p>
-                    <div class="timeline-details">
-                        <p>Gestión de procesos de contratación y asesoría en asuntos administrativos.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content" tabindex="0"
-                     role="button" aria-expanded="false">
-                    <div class="timeline-year">2023</div>
-                    <h3>Ministerio de Vivienda & ANA</h3>
-                    <p>Asesoría en políticas de vivienda y recursos hídricos</p>
-                    <div class="timeline-details">
-                        <p>Especialista en derecho de recursos hídricos y políticas de vivienda sostenible.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content" tabindex="0"
-                     role="button" aria-expanded="false">
-                    <div class="timeline-year">2022</div>
-                    <h3>ESSALUD</h3>
-                    <p>Dirección de asuntos legales</p>
-                    <div class="timeline-details">
-                        <p>Liderazgo en la dirección de asuntos legales y estrategia jurídica institucional.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content" tabindex="0"
-                     role="button" aria-expanded="false">
-                    <div class="timeline-year">2021</div>
-                    <h3>Colegio Químico Farmacéutico</h3>
-                    <p>Asesoría jurídica institucional</p>
-                    <div class="timeline-details">
-                        <p>Asesoría legal en asuntos administrativos y regulatorios.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content" tabindex="0"
-                     role="button" aria-expanded="false">
-                    <div class="timeline-year">2019</div>
-                    <h3>Ministerio de la Mujer</h3>
-                    <p>Coordinadora de asuntos jurídicos</p>
-                    <div class="timeline-details">
-                        <p>Coordinación de asuntos legales y políticas de género.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
- 
-<!-- === PUBLICACIONES === -->
-<section id="publicaciones">
-    <div class="container">
-        <h2 class="section-title">Publicaciones</h2>
-        <div class="publicacion-card">
-            <div class="publicacion-header">
-                <h3>Artículos y Contribuciones</h3>
-                <p class="publicacion-subtitle">
-                    Derecho Administrativo y Gestión Pública
+        <canvas id="particleCanvas" class="particle-canvas"></canvas>
+    </section>
+
+    <!-- SOBRE INGRID -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre Ingrid</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    Abogada titulada con más de trece años de experiencia profesional en instituciones públicas y privadas del Perú, especializada en <strong>Derecho Administrativo</strong>, <strong>Derecho Civil</strong> y <strong>Gestión Pública</strong>. Ha ocupado cargos de asesoría jurídica, coordinación y dirección en entidades como PRONIED, ESSALUD, Ministerio de Vivienda, Autoridad Nacional del Agua y otras instituciones del Estado.
                 </p>
-            </div>
-            <p class="publicacion-date">2024 - 2025</p>
-            <p class="publicacion-description">
-                Contribuciones en revistas especializadas sobre
-                derecho administrativo, gestión pública y políticas
-                de recursos hídricos. Análisis de jurisprudencia y
-                tendencias en derecho público peruano.
-            </p>
-            <a href="#" class="publicacion-link">
-                Ver Publicaciones
-            </a>
-        </div>
-    </div>
-</section>
- 
-<!-- === RECONOCIMIENTOS === -->
-<section id="reconocimientos">
-    <div class="container">
-        <h2 class="section-title">Reconocimientos</h2>
-        <div class="reconocimientos-grid">
-            <div class="reconocimiento-card">
-                <div class="reconocimiento-icon">🏆</div>
-                <h3>Doctor Honoris Causa</h3>
-                <p class="reconocimiento-institucion">International Embassy of Peace</p>
-                <p class="reconocimiento-year">2026</p>
-            </div>
-            <div class="reconocimiento-card">
-                <div class="reconocimiento-icon">🎖</div>
-                <h3>Reconocimiento Institucional</h3>
-                <p class="reconocimiento-institucion">Cámara Nacional de Comercio</p>
-                <p class="reconocimiento-year">2026</p>
-            </div>
-            <div class="reconocimiento-card">
-                <div class="reconocimiento-icon">⭐</div>
-                <h3>Sembrando Valores</h3>
-                <p class="reconocimiento-institucion">EMAG</p>
-                <p class="reconocimiento-year">2026</p>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <h3>Experiencia</h3>
+                        <p>13+ años en sector público y privado</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Especialización</h3>
+                        <p>Derecho Administrativo y Gestión Pública</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Compromiso</h3>
+                        <p>Fortalecimiento institucional del Estado</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
- 
-<!-- === FORMACIÓN ACADÉMICA === -->
-<section id="formacion">
-    <div class="container">
-        <h2 class="section-title">Formación Académica</h2>
-        <div class="formacion-grid">
-            <div class="formacion-column">
-                <h3>Grados Académicos</h3>
-                <ul class="formacion-list">
-                    <li>Licenciada en Derecho</li>
-                    <li>Máster en Gestión Pública</li>
-                    <li>Colegiada en el Colegio de Abogados de Lima (CAL)</li>
-                </ul>
+    </section>
+
+    <!-- TRAYECTORIA PROFESIONAL -->
+    <section id="trayectoria" class="trayectoria">
+        <div class="container">
+            <h2 class="section-title">Trayectoria Profesional</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-year="2025">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>PRONIED</h3>
+                        <p class="timeline-year">2025</p>
+                        <div class="timeline-details">
+                            <p>Asesoría jurídica en proyectos educativos nacionales</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2024">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>ESSALUD</h3>
+                        <p class="timeline-year">2024</p>
+                        <div class="timeline-details">
+                            <p>Coordinación de asuntos jurídicos y contrataciones</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2023">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Ministerio de Vivienda</h3>
+                        <p class="timeline-year">2023</p>
+                        <div class="timeline-details">
+                            <p>Asesoría en políticas de vivienda y urbanismo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2023">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Autoridad Nacional del Agua (ANA)</h3>
+                        <p class="timeline-year">2023</p>
+                        <div class="timeline-details">
+                            <p>Especialista en derecho de recursos hídricos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2022">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>ESSALUD</h3>
+                        <p class="timeline-year">2022</p>
+                        <div class="timeline-details">
+                            <p>Dirección de asuntos legales</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2021">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Colegio Químico Farmacéutico</h3>
+                        <p class="timeline-year">2021</p>
+                        <div class="timeline-details">
+                            <p>Asesoría jurídica institucional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2019">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Ministerio de la Mujer</h3>
+                        <p class="timeline-year">2019</p>
+                        <div class="timeline-details">
+                            <p>Coordinadora de asuntos jurídicos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2018">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>PRONIS</h3>
+                        <p class="timeline-year">2018</p>
+                        <div class="timeline-details">
+                            <p>Asesoría en proyectos de infraestructura</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2017">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Superintendencia Nacional de Migraciones</h3>
+                        <p class="timeline-year">2017</p>
+                        <div class="timeline-details">
+                            <p>Especialista en derecho migratorio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2014">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>APPRODEP</h3>
+                        <p class="timeline-year">2014</p>
+                        <div class="timeline-details">
+                            <p>Inicio de carrera profesional</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="formacion-column">
-                <h3>Diplomados</h3>
-                <ul class="formacion-list">
-                    <li>Diplomado en Contrataciones del Estado</li>
-                    <li>Diplomado en Derecho de Recursos Hídricos</li>
-                    <li>Diplomado en Derecho Administrativo</li>
-                    <li>Programa EcoAgua (Gestión Sostenible del Agua)</li>
-                </ul>
+        </div>
+    </section>
+
+    <!-- ESPECIALIDADES -->
+    <section id="especialidades" class="especialidades">
+        <div class="container">
+            <h2 class="section-title">Especialidades</h2>
+            <div class="especialidades-grid">
+                <div class="especialidad-card">
+                    <span class="especialidad-icon">⚖</span>
+                    <h3>Derecho Administrativo</h3>
+                </div>
+                <div class="especialidad-card">
+                    <span class="especialidad-icon">🏛</span>
+                    <h3>Gestión Pública</h3>
+                </div>
+                <div class="especialidad-card">
+                    <span class="especialidad-icon">📜</span>
+                    <h3>Derecho Civil</h3>
+                </div>
+                <div class="especialidad-card">
+                    <span class="especialidad-icon">🤝</span>
+                    <h3>Contrataciones del Estado</h3>
+                </div>
+                <div class="especialidad-card">
+                    <span class="especialidad-icon">💧</span>
+                    <h3>Recursos Hídricos</h3>
+                </div>
+                <div class="especialidad-card">
+                    <span class="especialidad-icon">📑</span>
+                    <h3>Asesoría Jurídica</h3>
+                </div>
+                <div class="especialidad-card">
+                    <span class="especialidad-icon">⚡</span>
+                    <h3>Resolución de Conflictos</h3>
+                </div>
             </div>
-            <div class="formacion-column">
-                <h3>Capacitaciones</h3>
-                <ul class="formacion-list">
-                    <li>Especialización en Políticas Públicas</li>
-                    <li>Cursos en Derecho Ambiental</li>
-                    <li>Seminarios en Gobernanza Institucional</li>
-                </ul>
+        </div>
+    </section>
+
+    <!-- PUBLICACIONES -->
+    <section id="publicaciones" class="publicaciones">
+        <div class="container">
+            <h2 class="section-title">Publicaciones</h2>
+            <div class="publicacion-card">
+                <div class="publicacion-header">
+                    <h3>EcoAgua</h3>
+                    <p class="publicacion-subtitle">Perú - España</p>
+                </div>
+                <p class="publicacion-date">Enero 2026</p>
+                <p class="publicacion-description">"Seis meses trasladando conocimiento para el cuidado del planeta"</p>
+                <a href="assets/pdf/ecoagua.pdf" class="publicacion-link" target="_blank">Leer publicación</a>
             </div>
         </div>
-    </div>
-</section>
- 
-<!-- === FRASE FINAL === -->
-<section id="frase-final">
-    <div class="container">
-        <p class="frase-quote">
-            El fortalecimiento institucional del Estado es la base
-            para el desarrollo sostenible y la justicia social
-            en el Perú.
-        </p>
-    </div>
-</section>
- 
-<!-- === CONTACTO === -->
-<section id="contacto">
-    <div class="container">
-        <h2 class="section-title">Contacto</h2>
-        <div class="contact-wrapper">
-            <p>¿Tienes alguna consulta o necesitas asesoría jurídica?</p>
-            <a href="mailto:ingrid@ingridzuniga.com"
-               class="cta-button">Enviar Correo</a>
-            <a href="https://linkedin.com/in/ingrid-zuniga-abanto"
-               class="cta-button cta-secondary" target="_blank">
-               LinkedIn</a>
+    </section>
+
+    <!-- RECONOCIMIENTOS -->
+    <section id="reconocimientos" class="reconocimientos">
+        <div class="container">
+            <h2 class="section-title">Reconocimientos</h2>
+            <div class="reconocimientos-grid">
+                <a href="assets/pdf/doctorado.pdf"
+   target="_blank"
+   class="reconocimiento-card"
+   style="text-decoration:none; color:inherit; display:block;">
+
+    <div class="reconocimiento-icon">🏅</div>
+
+    <h3>Doctor Honoris Causa</h3>
+
+    <p class="reconocimiento-institucion">
+        Embajada Internacional de la Paz
+    </p>
+
+    <p class="reconocimiento-year">
+        2026
+    </p>
+
+</a>
+                <div class="reconocimiento-card">
+                    <div class="reconocimiento-icon">🏆</div>
+                    <h3>Reconocimiento Institucional</h3>
+                    <p class="reconocimiento-institucion">Cámara Nacional de Comercio</p>
+                    <p class="reconocimiento-year">2026</p>
+                </div>
+                <div class="reconocimiento-card">
+                    <div class="reconocimiento-icon">⭐</div>
+                    <h3>Sembrando Valores</h3>
+                    <p class="reconocimiento-institucion">EMAG</p>
+                    <p class="reconocimiento-year">2026</p>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
- 
-<!-- === FOOTER === -->
-<footer class="footer" role="contentinfo">
-    <div class="container">
-        <div class="footer-content">
-            <h3>Ingrid Estefani Zúñiga Abanto</h3>
-            <p>Abogada | Derecho Administrativo | Gestión Pública</p>
-            <p>Lima, Perú</p>
+    </section>
+
+    <!-- FORMACIÓN ACADÉMICA -->
+    <section id="formacion" class="formacion">
+        <div class="container">
+            <h2 class="section-title">Formación Académica</h2>
+            <div class="formacion-grid">
+                <div class="formacion-column">
+                    <h3>Títulos y Grados</h3>
+                    <ul class="formacion-list">
+                        <li>Título Profesional en Derecho</li>
+                        <li>Colegiada en el Colegio de Abogados de Lima (CAL)</li>
+                        <li>Maestría en Gestión Pública</li>
+                    </ul>
+                </div>
+                <div class="formacion-column">
+                    <h3>Diplomados y Especializaciones</h3>
+                    <ul class="formacion-list">
+                        <li>Diplomado en Contrataciones del Estado (OSCE)</li>
+                        <li>Diplomado en Recursos Hídricos (ANA)</li>
+                        <li>Diplomado en Derecho Administrativo (ENAP)</li>
+                        <li>Programa Internacional en Gestión Sostenible del Agua (EcoAgua Perú-España 2025-2026)</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="footer-copyright">
-            <p>&copy; 2026 Ingrid Estefani Zúñiga Abanto.
-               Todos los derechos reservados.</p>
+    </section>
+
+    <!-- FRASE FINAL -->
+    <section id="frase-final" class="frase-final">
+        <div class="container">
+            <blockquote class="frase-quote">
+                <p>"El Derecho es el instrumento mediante el cual las instituciones generan confianza, fortalecen la democracia y promueven el desarrollo de la sociedad."</p>
+            </blockquote>
         </div>
-    </div>
-</footer>
- 
-<!-- Botón Volver Arriba -->
-<button class="scroll-to-top" id="scrollToTop"
-        aria-label="Volver al inicio">↑</button>
- 
-<script src="script.js"></script>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Ingrid Estefani Zúñiga Abanto</h3>
+                <p>Abogada</p>
+                <p>Gestión Pública | Derecho Administrativo</p>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 Ingrid Estefani Zúñiga Abanto. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
-
