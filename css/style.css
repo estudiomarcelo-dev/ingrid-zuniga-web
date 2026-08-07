@@ -45,23 +45,23 @@ body.dark-mode {
    DARK MODE TOGGLE
    ============================================ */
 
-.dark-mode-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--accent-gold);
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: var(--transition);
+.dark-mode-toggle{
+    position:fixed;
+    top:18px;
+    right:15px;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:var(--accent-gold);
+    border:none;
+    cursor:pointer;
+    font-size:22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:1100;
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
+    transition:var(--transition);
 }
 
 .dark-mode-toggle:hover {
@@ -1046,5 +1046,22 @@ section{
 .section-title{
     font-size:34px;
 }
+.dark-mode-toggle{
+    top:16px;
+    right:18px;
+    width:45px;
+    height:45px;
+    font-size:20px;
+}
 
+.menu-toggle{
+    position:absolute;
+    top:18px;
+    right:75px;
+    display:block;
+    font-size:32px;
+    color:#fff;
+    cursor:pointer;
+    z-index:1200;
+}
 }
