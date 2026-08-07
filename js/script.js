@@ -228,3 +228,23 @@ if ('IntersectionObserver' in window) {
 // gtag('config', 'GA_MEASUREMENT_ID');
 
 console.log('✅ Sitio web de Ingrid Zúñiga cargado correctamente');
+// ============================================
+// MENÚ RESPONSIVE
+// ============================================
+
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.querySelector('.nav-menu');
+
+if (menuToggle && navMenu) {
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+
+}
